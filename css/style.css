@@ -13,18 +13,18 @@ body{
     display: flex;
 }
 .header-left{
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
-.header-right{
-    display: block;
+.header-right a{
     position: relative;
     color: #7b909a;
-    padding: 10px 15px;
+    padding: 8px 10px;
     transition: 0.3s;
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+    text-decoration: none;
 }
-.header-right:hover{
+.header-right a:hover{
     color: lightblue;
 }
 .banner-right img, #about img{
@@ -36,8 +36,11 @@ body{
 }
 #banner{
     background: url(../images//hero-bg.png);
-    background-size: cover;
-    padding: 40px 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    padding: 60px 0;
     background-attachment: fixed;
 }
 .banner-wrapper{
@@ -74,10 +77,14 @@ body{
     padding: 10px 10px 10px 10px;
     border: none;
 }
+#about{
+    padding-top: 50px;
+}
 .about-wrapper{
     display: flex;
     background-color: #f7f8f9;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 #service{
     background-color: #f7f8f9;
@@ -99,6 +106,15 @@ body{
     font-size: 16px;
     padding-bottom: 30px;
     size: 18px;
+}
+#portfolio{
+    padding-bottom: 50px;
+}
+#portfolio img{
+    padding-bottom: 30px;
+    width: auto;
+    height: 271px;
+    padding-right: 30px;
 }
 .service-menu{
     display: flex;
@@ -194,7 +210,8 @@ body{
     background-attachment: fixed;
     background-image: url(../images/cta-bg.jpg) ;
     padding: 60px 0;
-    overflow: hidden;}
+    overflow: hidden;
+}
 .cta-wrapper{
     display: flex;
 }
